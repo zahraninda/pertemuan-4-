@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Studi Kasus: Kalkulator Sederhana</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="calculator-card">
+    <h2>Kalkulator Sederhana</h2>
+    
+    <div class="input-group">
+      <input type="number" id="angka1" placeholder="Masukkan angka pertama">
+      <input type="number" id="angka2" placeholder="Masukkan angka kedua">
+    </div>
+
+    <div class="button-group">
+      <button onclick="hitung('+')">+</button>
+      <button onclick="hitung('-')">-</button>
+      <button onclick="hitung('*')">×</button>
+      <button onclick="hitung('/')">÷</button>
+    </div>
+
+    <div class="result-container">
+      <h3>Hasil: <span id="hasil">0</span></h3>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

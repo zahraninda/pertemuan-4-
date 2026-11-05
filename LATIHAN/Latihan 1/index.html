@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Latihan 1: Variabel dan Tipe Data</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h2>Data Profil</h2>
+    <div class="profile-info">
+      <p><strong>Nama:</strong> <span id="nama"></span></p>
+      <p><strong>Umur:</strong> <span id="umur"></span></p>
+      <p><strong>Status Menikah:</strong> <span id="status"></span></p>
+    </div>
+  </div>
+
+  <script>
+    
+    let nama = "John Doe";
+    let umur = 25;
+    let statusMenikah = false;
+
+    console.log("Nama: " + nama);
+    console.log("Umur: " + umur);
+    console.log("Status Menikah: " + statusMenikah);
+
+    document.getElementById("nama").textContent = nama;
+    document.getElementById("umur").textContent = umur;
+    document.getElementById("status").textContent = statusMenikah ? "Sudah Menikah" : "Belum Menikah";
+  </script>
+
+</body>
+</html>
